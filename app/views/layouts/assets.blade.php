@@ -16,6 +16,7 @@
 {{ HTML::script('vendor/angular/angular.min.js') }}
 {{ HTML::script('vendor/angular/angular-animate.min.js') }}
 {{ HTML::script('vendor/angular-md5.js') }}
+{{ HTML::script('vendor/angular/angular-resource.min.js') }}
 {{ HTML::script('vendor/ui-bootstrap-tpls-0.10.0.min.js') }}
 {{ HTML::script('vendor/ui-utils.min.js') }}
 {{ HTML::script('vendor/select2/select2.js') }}
@@ -27,6 +28,7 @@
 {{ HTML::script('js/angular/services.js') }}
 {{ HTML::script('js/angular/directives.js') }}
 {{ HTML::script('js/angular/filters.js') }}
+{{ HTML::script('js/angular/resources.js') }}
 {{ HTML::script('js/madison.js') }}
 
 <?php 

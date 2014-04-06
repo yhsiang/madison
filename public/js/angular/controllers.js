@@ -701,6 +701,17 @@ function DashboardEditorController($scope, $http, $timeout, $location, $filter)
 	};
 }
 
+function DashboardRolesController($scope, $http, Users){
+	$scope.userOptions = {
+		allowClear: true,
+		query: function (query) {
+			var user = Users.query({email: query});
+			console.log(user);
+			query.callback(user);
+		}
+	};
+}
+
 /**
 *	Dependency Injections
 */
@@ -708,6 +719,7 @@ function DashboardEditorController($scope, $http, $timeout, $location, $filter)
 DashboardEditorController.$inject = ['$scope', '$http', '$timeout', '$location', '$filter'];
 DashboardSettingsController.$inject = ['$scope', '$http'];
 DashboardVerifyController.$inject = ['$scope', '$http'];
+DashboardRolesController.$inject = ['$scope', '$http', 'Users'];
 
 HomePageController.$inject = ['$scope', '$http', '$filter'];
 UserPageController.$inject = ['$scope', '$http', '$location'];

@@ -10,6 +10,7 @@
 			<li>{{ HTML::link('dashboard/settings', 'Settings') }}</li>
 			<li>{{ HTML::link('dashboard/docs', 'Create / Edit Documents') }}</li>
 			<li>{{ HTML::link('dashboard/verifications', 'Verify Accounts') }}</li>
+			<li>{{ HTML::link('dashboard/roles', 'Roles') }}</li>
 		</ul>
 	</div>
 @endsection

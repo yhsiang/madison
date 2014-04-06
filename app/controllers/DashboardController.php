@@ -209,5 +209,14 @@ class DashboardController extends BaseController{
 			return Redirect::back()->with('error', 'The admin account with this email was not found.  Please try a different email.');
 		}
 	}
+
+	public function getRoles() {
+		$data = array(
+			'page_id'		=> 'roles',
+			'page_title'	=> 'Roles'
+		);
+
+		return View::make('dashboard.roles', $data);
+	}
 }
 
